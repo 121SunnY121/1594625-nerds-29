@@ -1,0 +1,213 @@
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  background-color: #FFFFFF;
+  background-image: url("../img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.page a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+                        /* main-header */
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: #FFFFFF;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation-current a:not([href]) {
+  background-color: #FFFFFF;
+}
+.site-navigation a,
+.link-basket  {
+  color: #000000;
+  text-transform: uppercase;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.link-basket :hover,
+.link-basket :focus
+ {
+  background-color: #FFFFFF;
+}
+                       /* container:
+                       features */
+.features h3{
+  font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+}
+  
+  .link-feature {
+    text-align: center;
+    color: #FFFFFF;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #FB565A;
+    border: none;
+    font-size: 16px;
+    line-height: 18px
+  }
+  .link-feature:hover,
+.link-feature:focus,
+.link-feature:active {
+  background-color: #FF0000;
+}
+  .columns {
+    color: #000000;
+  background-color: #EEEEEE;
+  }
+                    /* container:
+                       services */
+  .services-item {
+    text-align: center;
+    list-style: none;
+  }
+  .services h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+  }
+  
+  .link-services1 {
+    text-align: center;
+    color: #FFFFFF;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #FB565A;
+    border: none;
+    font-size: 16px;
+    line-height: 18px
+  }
+  .link-services1:hover,
+.link-services1:focus,
+.link-services1:active {
+  background-color: #FF0000;
+}
+.link-services2 {
+  text-align: center;
+  color: #FFFFFF;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #00CA74;
+  border: none;
+  font-size: 16px;
+  line-height: 18px
+}
+.link-services2:hover,
+.link-services2:focus,
+.link-services2:active {
+background-color: #32CD32;
+}
+.link-services3 {
+  text-align: center;
+  color: #FFFFFF;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #EFC849;
+  border: none;
+  font-size: 16px;
+  line-height: 18px
+}
+.link-services3:hover,
+.link-services3:focus,
+.link-services3:active {
+background-color: #FFFF00;
+}
+                  /* container:
+                       information */
+.information-scream{
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.information-2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.information-orders{
+  list-style: none;
+}
+.information-3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+dt {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  color: #000000;
+}
+dd{
+  font-size: 16px;
+  line-height: 18px;
+}
+                    /* main-footer
+                    footer-contacts */
+.footer-contacts h2{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+.footer-contacts p{
+  font-size: 16px;
+  line-height: 18px;
+  color:#666666
+}
+.contacts-phone {
+  color:#666666
+}
+.contacts-link {
+  text-align: center;
+  color: #FFFFFF;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #FB565A;
+  border: none;
+  font-size: 16px;
+  line-height: 18px
+}
+.contacts-link:hover,
+.contacts-link:focus,
+.contacts-link:active {
+background-color: #FF0000;
+}
+                     /* main-footer
+                    network */
+.network-list, a {
+  list-style: none;
+  color: #000000
+}
+.network-1 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700
+}
+.network-2 {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444
+}

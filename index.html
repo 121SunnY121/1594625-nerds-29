@@ -1,64 +1,86 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
-    <nav>
-      <a>
+  <body class="page-body">
+    <div class="columns">
+    <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="159" height="65" 
         alt="Логотип дизайнерской студии Нердс">
       </a>
-      <ul>
-        <li><a href="silochka.html">Студия</a></li>
-        <li><a href="silochka.html">Клиенты</a></li>
-        <li><a href="silochka.html">Магазин</a></li>
-        <li><a href="silochka.html">Контакты</a></li>
+      <ul class="site-navigation">
+        <li><a href="link.html">Студия</a></li>
+        <li><a href="link.html">Клиенты</a></li>
+        <li><a href="link.html">Магазин</a></li>
+        <li><a href="link.html">Контакты</a></li>
       </ul>
-      <a href="silochka.html">Корзина</a>
+      <a class="link-basket" href="link.html">Корзина</a>
     </nav>
     </header>
-<main>
+<main class="container">
     <h1>Дизайнерская студия "Нердс"</h1>
-    <section>
+    <section class="features">
       <h2>Преимущества</h2>
-      <p>Долго, дорого, скрупулезно.</p>
+      <h3>Долго, дорого, скрупулезно.</h3>
       <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-      <a href="silochka.html">Узнать больше</a>
+      <a class="link-feature" href="link.html">Узнать больше</a>
       <p>
-      <button type="button">слайд1</button>
-      <button type="button">слайд2</button>
-      <button type="button">слайд3</button></p>
+      <button class="feature-slide" type="button">слайд1</button>
+      <button class="feature-slide" type="button">слайд2</button>
+      <button class="feature-slide" type="button">слайд3</button></p>
     </section>
-    <section>
+    </div>
+    <section class="services">
       <h2>Услуги студии</h2>
+      <ul class="services-item">
+        <li>
+      <a class="services-illustration">
+        <img src="img/illustration.svg" width="300" height="146" alt="ноутбук">
+      </a>
       <h3>Веб-сайты</h3>
       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-      <a href="silochka.html">Заказать</a>
+      <a class="link-services1" href="link.html">Заказать</a>
+      </li>
+      <li>
+        <a class="services-phone1">
+          <img src="img/phone1.svg" width="300" height="146" alt="телефон">
+        </a>
       <h3>Приложение</h3>
       <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-      <a href="silochka.html">Заказать</a>
+      <a class="link-services2" href="link.html">Заказать</a>
+      </li>
+      <li>
+        <a class="services-presentation">
+          <img src="img/presentation.svg" width="300" height="146" alt="презентация">
+        </a>
       <h3>Презентации</h3>
       <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-      <a href="silochka.html">Заказать</a>
+      <a class="link-services3" href="link.html">Заказать</a>
+      </li>
+      </ul>
     </section>
-    <section>
+    <section class="information">
       <h2>Информация о самой студии Нердс</h2>
-      <p>Мы — маленькая, но гордая
+      <p class="information-scream">Мы — маленькая, но гордая
       дизайн-студия из Краснодара.</p>
       <p> Исповедуем принципы минимализма и чистоты. Ставим математический расчет
        превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <p>Выполняем заказы на разработку:</p>
-      <ul>
+      <p class="information-2">Выполняем заказы на разработку:</p>
+      <ul class="information-orders">
         <li>Веб-сайтов любой сложности</li>
         <li>Мобильных приложений для IOS и Android</li>
         <li>Слайдшоу и видео для корпоративных презентация</li>
       </ul>
-      <p>с 2004 года Любим точность во всем:</p>
-      <dl>
-        <dt>146%</dt>
+      <p class="information-3">с 2004 года Любим точность во всем:</p>
+      <dl class="information-percent">
+        <dt> 146%</dt>
         <dd>Уровень самоотдачи</dd>
         <dt>100%</dt>
         <dd>Соблюдеине сроков</dd>
@@ -66,40 +88,40 @@
         <dd>Минимальная предоплата</dd>
       </dl>
    </section>
-   <section>
+   <section class="partners">
       <h2>Партнеры</h2>
-      <a href="#"><img src="img/group5.svg" alt="HTML Academiy"></a>
-      <a href="#"><img src="img/logo-21.svg" alt="Borodinski"></a>
-      <a href="#"><img src="img/logo-31.svg" alt="pink"></a>
-      <a href="#"><img src="img/logo-41.svg" alt="mishka"></a>
+      <a class="partners-link" href="#"><img src="img/group5.svg" alt="HTML Academiy"></a>
+      <a class="partners-link" href="#"><img src="img/logo-21.svg" alt="Borodinski"></a>
+      <a class="partners-link" href="#"><img src="img/logo-31.svg" alt="pink"></a>
+      <a class="partners-link" href="#"><img src="img/logo-41.svg" alt="mishka"></a>
    </section>
 </main>
-<footer>
-  <section>
-    <a>
+<footer class="main-footer">
+  <section class="footer-contacts">
+    <a class="contacts-image">
       <img src="img/map1.svg" width="1440" height="416" alt="карта, как до нас добраться»">
     </a>
     <h2>NЁRDS DESIGN STUDIO</h2>
     <p>191186, Санкт-Петербург,<br>
        ул. Б. Конюшенная, д. 19/8<br>
-       <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-    <a href="silochka.html">Напиши нам</a>
+       <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+    <a class="contacts-link" href="link.html">Напиши нам</a>
   </section>
-  <section>
+  <section class="network">
     <h2>Социальные сети</h2>
-    <ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">фейсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
+    <ul class="network-list">
+      <li class="network-link" ><a href="#">Вконтакте</a></li>
+      <li class="network-link" ><a href="#">фейсбук</a></li>
+      <li class="network-link" ><a href="#">Инстаграм</a></li>
     </ul>
-    <p>Давайте дружить это выгодно<p>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <p class="network-1" >Давайте дружить это выгодно!<p>
+    <p class="network-2">Скидка 10% для друзей из социальных сетей.</p>
   </section>
 </footer>
-<section>
+<section class="map">
   <h2>Как до нас добраться</h2>
   <!-- Здесь будет карта -->
-  <button type="button">Закрыть</button>
+  <button class="map1" type="button">Закрыть</button>
 </section>
   </body>
 </html>
