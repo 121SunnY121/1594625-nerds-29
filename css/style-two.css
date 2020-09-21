@@ -1,0 +1,188 @@
+:root{
+  --basic-black:#000000;
+  --basic-normal-black:#283136;
+  --basic-red:#FB565A;
+  --basic-normal-red:#E74246;
+  --basic-dark-red: #D7373B;
+  --basic-green:#00CA74;
+  --basic-notmal-green:#00BC6C;
+  --basic-dark-green:#00AA62;
+  --basic-yellow:#EFC84A;
+  --basic-normal-yellow:#EAB534;
+  --basic-dark-yellow:#E5A722;
+  --basic-gray: #EEEEEE;
+  --extra-gray: #E1E1E1;
+  --basic-white: #FFFFFF;
+  --basic-normal-white: rgb(255, 255, 255, 0.3);
+  --basic-extra-blacke: rgb(0,0,0,0.3);
+  --basic-extra-gray: #666666;
+  --basic-ultra-gray: #444444;
+  --basic-super-gray: #DFDFDF;
+  --basic-mega-gray: #D5D5D5;
+  }
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color:var(--basic-normal-black);
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+ a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* header */
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color:var(--basic-black);
+  background-color: transparent;
+  font-weight: 500;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a,
+.link-basket  {
+  color:var(--basic-black);
+  text-transform: uppercase;
+}
+.site-navigation a:hover,
+.link-basket:hover {
+  color:var(--basic-red)
+}
+.site-navigation a:focus,
+.link-basket:focus
+ {
+  color:var(--basic-black);
+  opacity: 0.3}
+                        /* main */
+                        
+ .filter-list h1{
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color:var(--basic-black);
+}
+.list-chek{
+  list-style: none;
+}
+.list-chek-tow h3{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color:var(--basic-black);
+  text-transform: uppercase;
+}
+.list-chek-tow p{
+  font-size: 16px;
+  line-height: 18px;
+  color:var(--basic-extra-gray);
+}
+.list-link{
+  text-align: center;
+    color:var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color:var(--basic-red);
+    border: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    border-radius: 3px;
+  }
+  .list-link:hover{
+    background-color:var(--basic-normal-red);
+  }
+.list-link:focus{
+  background: var(--basic-dark-red);
+}
+.number-one{
+  text-align: center;
+    color:var(--basic-black);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color:var(--basic-gray);
+    border: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+.number-one:hover{
+  background-color:var(--basic-super-gray);
+}
+.number-one:focus{
+background: var(--basic-mega-gray);
+color:var(--basic-extra-blacke);
+}
+.number-list{
+  list-style: none;
+}
+.columns {
+  background-color:var(--basic-gray);
+  }
+  
+                    /* main-footer
+                    footer-contacts */
+.footer-contacts h2{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;}
+  .footer-item{
+    font-size: 16px;
+    line-height: 18px;
+    color:var(--basic-extra-gray);
+  }
+  .contacts-phone{
+    color:var(--basic-extra-gray);
+  }
+.contacts-link {
+  text-align: center;
+    color:var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color:var(--basic-red);
+    border: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    border-radius: 3px;
+  }
+  .contacts-link:hover{
+    background-color:var(--basic-normal-red);
+  }
+.contacts-link:focus{
+  color: var(--basic-normal-white);
+  background: var(--basic-dark-red);
+}
+
+                     /* main-footer
+                    network */
+
+.network-list{
+  list-style: none;
+}
+.network-red {
+  font-size: 36px;
+  line-height: 36px;
+  color:var(--basic-black);
+  font-weight: 700
+}
+.network-blue {
+  font-size: 16px;
+  line-height: 22px;
+  color:var(--basic-ultra-gray);
+}

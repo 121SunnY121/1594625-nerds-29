@@ -3,37 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог-студии Нердс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swa">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style-two.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-    <nav>
-      <a>
-        <img src="img/nerds-logo.svg" width="159" height="65" 
-        alt="Логотип дизайнерской студии Нердс">
-      </a>
-      <ul>
-        <li><a href="link.html">Студия</a></li>
-        <li><a href="link.html">Клиенты</a></li>
-        <li><a href="link.html">Магазин</a></li>
-        <li><a href="link.html">Контакты</a></li>
-      </ul>
-      <a href="link.html">Корзина</a>
-    </nav>
-    </header>
-<main>
+    <header class="main-header">
+      <div class="columns">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/nerds-logo.svg" width="159" height="65" 
+          alt="Логотип дизайнерской студии Нердс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="link.html">Студия</a></li>
+          <li><a href="link.html">Клиенты</a></li>
+          <li><a href="link.html">Магазин</a></li>
+          <li><a href="link.html">Контакты</a></li>
+        </ul>
+        <a class="link-basket" href="link.html">Корзина</a>
+      </nav>
+      </div>
+      </header>
+<main class="filter-list">
+  <div class="columns">
     <h1>Магазин готовых шаблонов</h1>
-      <section>
+    </div>
+      <section class="filter">
         <h2>Фильтр товаров</h2>
         <!-- Здесь будет форма фильтра -->
       </section>
-    <section>
+    <section class="list">
       <h2>Список шаблонов</h2>
-      <ul>
+      <ul class="list-chek">
         <li>
           <a href="template.html"><img src="img/img-sedona.jpg" width="358" height="576" alt="Шаблон сайта Седона"></a>
-        <h3>SEDONA</h3>
+        <div class="list-chek-tow">
+          <h3>SEDONA</h3>
         <p>Информационный сайт для туристов</p>
-        <p><button type="button">9 900 р</button></p>
+        <p><a class="list-link" href="#">9 900 р</button></p>
+        </div>
         </li>
         <li>
           <a href="template.html"><img src="img/img-pink.jpg" width="358" height="576" alt="Шаблон сайта Пинк"></a>
@@ -51,48 +60,48 @@
           <a href="template.html"><img src="img/img-kvast.jpg" width="358" height="576" alt="Шаблон сайта Кваст"></a>
         </li>
       </ul>
-      <ul>
-        <li>
-          <a>1</a>
-        </li>
-        <li>
-          <a href="#">2</a>
-        </li>
-        <li>
-          <a href="#">3</a>
-        </li>
-        <li>
-          <a href="#">Следующая</a>
-        </li>
-      </ul>
+      
+      
+          <a class="number-one" href="#">1</a>
+        
+        
+          <a class="number-one" href="#">2</a>
+        
+        
+          <a class="number-one" href="#">3</a>
+        
+        
+          <a class="number-one" href="#">Следующая</a>
+        
+      
       </section>
 </main>
-<footer>
-  <section>
-    <a>
+<footer class="main-footer">
+  <section class="footer-contacts">
+    <a class="contacts-image">
       <img src="img/map1.svg" width="1440" height="416" alt="карта, как до нас добраться»">
     </a>
     <h2>NЁRDS DESIGN STUDIO</h2>
-    <p>191186, Санкт-Петербург,<br>
+    <p class="footer-item">191186, Санкт-Петербург,<br>
        ул. Б. Конюшенная, д. 19/8<br>
-       <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-    <a href="link.html">Напиши нам</a>
+       <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+    <a class="contacts-link" href="link.html">Напиши нам</a>
   </section>
-  <section>
+  <section class="network">
     <h2>Социальные сети</h2>
-    <ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">фейсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
+    <ul class="network-list">
+      <li class="network-link" ><a href="#">Вконтакте</a></li>
+      <li class="network-link" ><a href="#">фейсбук</a></li>
+      <li class="network-link" ><a href="#">Инстаграм</a></li>
     </ul>
-    <p>Давайте дружить это выгодно<p>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <p class="network-red" >Давайте дружить это выгодно!<p>
+    <p class="network-blue">Скидка 10% для друзей из социальных сетей.</p>
   </section>
 </footer>
-<section>
+<section class="map">
   <h2>Как до нас добраться</h2>
   <!-- Здесь будет карта -->
-  <button type="button">Закрыть</button>
+  <button class="map1" type="button">Закрыть</button>
 </section>
   </body>
 </html>
