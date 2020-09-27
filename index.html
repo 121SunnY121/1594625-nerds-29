@@ -9,41 +9,47 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-       <div class="columns">
+      <div class="colomnus">
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="159" height="65" 
-        alt="Логотип дизайнерской студии Нердс">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="link.html">Студия</a></li>
-        <li><a href="link.html">Клиенты</a></li>
-        <li><a href="page.html">Магазин</a></li>
-        <li><a href="link.html">Контакты</a></li>
-      </ul>
-      <img src="img/cart-icon.svg" width="15" height="15" alt="значок корзины"><a  class="link-basket" href="link.html">Корзина</a>
+         <div class="site-navigation-wrapper">
+            <a class="main-header-logo">
+            <img src="img/nerds-logo.svg" width="159" height="65" 
+             alt="Логотип дизайнерской студии Нердс">
+            </a>
+             <ul class="site-navigation">
+             <li><a href="link.html">Студия</a></li>
+             <li><a href="link.html">Клиенты</a></li>
+             <li><a href="page.html">Магазин</a></li>
+             <li><a href="link.html">Контакты</a></li>
+             </ul>
+             <a  class="link-basket" href="link.html"><img src="img/cart-icon.svg" width="15" height="15" alt="значок корзины">Корзина</a>
+          </div>
     </nav>
-  </div>
+    </div>
     </header>
 <main class="container">
-  <div class="columns">
+  <div class="colomnus">
     <h1>Дизайнерская студия "Нердс"</h1>
-    <section class="features">
+    <div class="features-wrapper">
+      <section class="features"> 
       <h2>Преимущества</h2>
-      <img src="img/nerds-index-slide1.png" width="760" height="431" alt="несколько телефонов">
       <h3>Долго, дорого, скрупулезно.</h3>
       <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
       <a class="link-feature" href="link.html">Узнать больше</a>
+      </section>
+      <section class="features-two">
+      <img src="img/nerds-index-slide1.png" width="760" height="431" alt="несколько телефонов">
       <p>
       <button class="feature-slide" type="button">слайд1</button>
       <button class="feature-slide" type="button">слайд2</button>
       <button class="feature-slide" type="button">слайд3</button></p>
     </section>
-    </div>
+  </div>
+  </div>
     <section class="services">
       <h2>Услуги студии</h2>
       <ul class="services-item">
-        <li>
+        <li class="services-wrapper-one">
       <a class="services-illustration">
         <img src="img/illustration-1.png" width="300" height="146" alt="ноутбук">
       </a>
@@ -51,7 +57,7 @@
       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
       <a class="link-services-red" href="link.html">Заказать</a>
       </li>
-      <li>
+      <li class="services-wrapper-one">
         <a class="services-phone1">
           <img src="img/illustration-2.png" width="300" height="146" alt="телефон">
         </a>
@@ -59,7 +65,7 @@
       <p>Покорите топ-10 приложений в AppStore и Google Play</p>
       <a class="link-services-blue" href="link.html">Заказать</a>
       </li>
-      <li>
+      <li class="services-wrapper-one">
         <a class="services-presentation">
           <img src="img/illustration-3.png" width="300" height="146" alt="презентация">
         </a>
@@ -69,6 +75,7 @@
       </li>
       </ul>
     </section>
+    <div class="info-wrapper">
     <section class="information">
       <h2>Информация о самой студии Нердс</h2>
       <p class="information-scream">Мы — маленькая, но гордая
@@ -81,6 +88,8 @@
         <li>Мобильных приложений для IOS и Android</li>
         <li>Слайдшоу и видео для корпоративных презентация</li>
       </ul>
+    </section>
+    <section class="information-one">
       <img src="img/nerds-illustration.png" width="360" height="208" alt="надпись нердс">
       <p class="information-list">с 2004 года Любим точность во всем:</p>
       <dl class="information-percent">
@@ -92,12 +101,15 @@
         <dd class="class-two">Минимальная предоплата</dd>
       </dl>
    </section>
+   </div>
    <section class="partners">
       <h2>Партнеры</h2>
-      <a class="partners-link" href="#"><img src="img/logo-academia.png" alt="HTML Academiy"></a>
-      <a class="partners-link" href="#"><img src="img/logo-borodinckii.png" alt="Borodinski"></a>
-      <a class="partners-link" href="#"><img src="img/logo-pink.png" alt="pink"></a>
-      <a class="partners-link" href="#"><img src="img/logo-mishka.png" alt="mishka"></a>
+      <div class="partners-wrapper">
+      <a class="partners-link" href="#"><img src="img/logo-academia.png" width="199" height="68" alt="HTML Academiy"></a>
+      <a class="partners-link" href="#"><img src="img/logo-borodinckii.png" width="209" height="90" alt="Borodinski"></a>
+      <a class="partners-link" href="#"><img src="img/logo-pink.png" width="185" height="52" alt="pink"></a>
+      <a class="partners-link" href="#"><img src="img/logo-mishka.png" width="173" height="84" alt="mishka"></a>
+    </div>
    </section>
 </main>
 <footer class="main-footer">
@@ -113,13 +125,17 @@
   </section>
   <section class="network">
     <h2>Социальные сети</h2>
+    <div class="net-wrapper">
     <ul class="network-list">
       <li class="network-link" ><a href="#">Вконтакте</a></li>
       <li class="network-link" ><a href="#">фейсбук</a></li>
       <li class="network-link" ><a href="#">Инстаграм</a></li>
     </ul>
+    <div class="net-one">
     <p class="network-red" >Давайте дружить это выгодно!<p>
     <p class="network-blue">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </div>
   </section>
 </footer>
 <section class="map">

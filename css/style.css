@@ -39,8 +39,22 @@ img {
   max-width: 100%;
   height: auto;
 }
+.page {
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
                         /* main-header */
+.main-header {
+  margin-bottom: 78px;
+}
 .main-navigation {
+  display:grid;
   font-size: 16px;
   line-height: 30px;
   color:var(--basic-black);
@@ -49,11 +63,20 @@ img {
 }
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .site-navigation a,
 .link-basket  {
   color:var(--basic-black);
   text-transform: uppercase;
+}
+.site-navigation-wrapper{
+  display:grid;
+  grid-template-columns: 1fr 2fr max-content;
+  margin: 0;
+  padding: 0;
+  
 }
 .site-navigation a:hover,
 .link-basket:hover {
@@ -67,6 +90,13 @@ img {
 }
                        /* container:
                        features */
+.features-wrapper{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
+}
 .features h3{
   font-size: 55px;
     line-height: 55px;
@@ -92,13 +122,18 @@ img {
   color: var(--basic-normal-white);
   background: var(--basic-dark-red);
 }
-  .columns {
-  background-color:var(--basic-gray);
-  }
+.colomnus{
+  background: var(--basic-gray);
+}  
                     /* container:
                        services */
   .services-item {
     list-style: none;
+    display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 155px;
   }
   .services h3 {
     font-size: 24px;
@@ -152,6 +187,13 @@ img {
 }
                   /* container:
                        information */
+.info-wrapper{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 121px;
+}
 .information-scream{
   font-size: 45px;
   line-height: 45px;
@@ -192,9 +234,18 @@ list-style: none;
   font-size: 16px;
   line-height: 18px;
 }
+.partners-wrapper{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 126px;
+}
 .partners-link{
   opacity: 0.2;
+  justify-self: center;
 }
+
 .partners-link:hover{
   opacity: 1;
 }
@@ -204,11 +255,12 @@ list-style: none;
   
                     /* main-footer
                     footer-contacts */
+           
 .footer-contacts h2{
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  color: #000000;
+  color: var(--basic-black);
   text-transform: uppercase;}
   .footer-item{
     font-size: 16px;
@@ -240,6 +292,12 @@ list-style: none;
 
                      /* main-footer
                     network */
+.net-wrapper{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  margin: 0;
+  padding: 0;
+}
 
 .network-list{
   list-style: none;
