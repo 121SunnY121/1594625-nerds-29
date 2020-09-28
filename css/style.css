@@ -50,8 +50,12 @@ img {
 }
 
                         /* main-header */
-.main-header {
+                                          
+.main-header-one {
   margin-bottom: 78px;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 .main-navigation {
   display:grid;
@@ -90,7 +94,9 @@ img {
 }
                        /* container:
                        features */
-
+.content-one{
+  background: var(--basic-gray);
+}
 .conteiner{
   width: 1160px;
   margin: 0 auto;
@@ -298,6 +304,11 @@ list-style: none;
 
                      /* main-footer
                     network */
+.main-footer{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px; 
+}
 .net-wrapper{
   display:grid;
   grid-template-columns:1fr 2fr;
