@@ -73,7 +73,7 @@ img {
 }
 .site-navigation-wrapper{
   display:grid;
-  grid-template-columns: 1fr 2fr max-content;
+  grid-template-columns: 1fr 2fr min-content;
   margin: 0;
   padding: 0;
   
@@ -90,6 +90,12 @@ img {
 }
                        /* container:
                        features */
+
+.conteiner{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 .features-wrapper{
   display:grid;
   grid-template-columns: 1fr 2fr;
@@ -122,7 +128,7 @@ img {
   color: var(--basic-normal-white);
   background: var(--basic-dark-red);
 }
-.colomnus{
+.columns{
   background: var(--basic-gray);
 }  
                     /* container:
