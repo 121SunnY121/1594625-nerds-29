@@ -41,8 +41,24 @@ img {
   max-width: 100%;
   height: auto;
 }
+.page {
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 /* header */
+.main-header-one {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 87px;
+}
 .main-navigation {
+  display:grid;
   font-size: 16px;
   line-height: 30px;
   color:var(--basic-black);
@@ -51,11 +67,20 @@ img {
 }
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .site-navigation a,
 .link-basket  {
   color:var(--basic-black);
   text-transform: uppercase;
+}
+.site-navigation-wrapper{
+  display:grid;
+  grid-template-columns: 1fr 2fr min-content;
+  margin: 0;
+  padding: 0;
+  
 }
 .site-navigation a:hover,
 .link-basket:hover {
@@ -65,8 +90,26 @@ img {
 .link-basket:focus
  {
   color:var(--basic-black);
-  opacity: 0.3}
+  opacity: 0.3
+}
                         /* main */
+.filter-list-two{
+  
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+  margin-bottom: 241px;
+}
+.filter-list-one{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+ .content-one{
+  background: var(--basic-gray);
+}
                         
  .filter-list h1{
   font-size: 55px;
@@ -75,7 +118,22 @@ img {
   color:var(--basic-black);
 }
 .list-chek{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 41px;
+  row-gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+.filter-list-one{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+ 
+}
+
+.list-chek{
   list-style: none;
+  
 }
 .list-chek-tow h3{
   font-size: 18px;
@@ -118,6 +176,10 @@ img {
     line-height: 18px;
     font-weight: 500;
     border-radius: 3px;
+ 
+}
+.number-list{
+  text-align: center;
 }
 .number-one:hover{
   background-color:var(--basic-super-gray);
@@ -128,13 +190,14 @@ color:var(--basic-extra-blacke);
 }
 .number-list{
   list-style: none;
+  margin-top: 55px;
+  margin-bottom: 60px;
 }
-.columns {
-  background-color:var(--basic-gray);
-  }
+
   
                     /* main-footer
                     footer-contacts */
+           
 .footer-contacts h2{
   font-size: 18px;
   line-height: 30px;
@@ -171,6 +234,17 @@ color:var(--basic-extra-blacke);
 
                      /* main-footer
                     network */
+.main-footer{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px; 
+}
+.net-wrapper{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  margin: 0;
+  padding: 0;
+}
 
 .network-list{
   list-style: none;
