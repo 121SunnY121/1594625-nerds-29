@@ -110,7 +110,9 @@ img {
  .content-one{
   background: var(--basic-gray);
 }
-                        
+.filter-list{
+margin-bottom: 55px;
+}                     
  .filter-list h1{
   font-size: 55px;
   line-height: 55px;
@@ -133,7 +135,7 @@ img {
 
 .list-chek{
   list-style: none;
-  
+  margin-bottom: 55px;
 }
 .list-chek-tow h3{
   font-size: 18px;
@@ -188,7 +190,11 @@ img {
 .list-chek-link-one{
   margin-left: 25px;
 }
-
+.list-chek-extra{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 41px;
+}
 .number-one{
   text-align: center;
     color:var(--basic-black);
@@ -212,14 +218,7 @@ img {
 background: var(--basic-mega-gray);
 color:var(--basic-extra-blacke);
 }
-.number-list{
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 10px;
-  list-style: none;
-  margin-top: 55px;
-  margin-bottom: 60px;
-}
+
 
   
                     /* main-footer
@@ -269,7 +268,7 @@ color:var(--basic-extra-blacke);
 }
 .footer-contacts{
   margin: 0 auto;
-  padding: 0 10px; 
+  
   text-align: center;
 }
 
