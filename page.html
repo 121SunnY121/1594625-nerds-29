@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог-студии Нердс</title>
+    <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swa">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style-two.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <div class="content-one">
       <div class="main-header-one">
@@ -18,12 +18,12 @@
              alt="Логотип дизайнерской студии Нердс">
             </a>
              <ul class="site-navigation">
-             <li><a href="link.html">Студия</a></li>
-             <li><a href="link.html">Клиенты</a></li>
+             <li><a href="#">Студия</a></li>
+             <li><a href="#">Клиенты</a></li>
              <li><a href="page.html">Магазин</a></li>
-             <li><a href="link.html">Контакты</a></li>
+             <li><a href="#">Контакты</a></li>
              </ul>
-             <a  class="link-basket" href="link.html"><img src="img/cart-icon.svg" width="15" height="15" alt="значок корзины">Корзина</a>
+             <a  class="link-basket" href="#">Корзина</a>
           </div>
     </nav>
     </div>
@@ -37,56 +37,194 @@
   </div>
     <div class="filter-list-one">
       <section class="filter">
-        <h2>Фильтр товаров</h2>
-        <!-- Здесь будет форма фильтра -->
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <fieldset class="filter-item">
+          <legend>Стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="width: 62%; margin-left: 6%">
+                </div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" style="left: 6%">
+              </div>
+            <div class="toggle toggle-max" tabindex="0" style="left: 62%">
+            </div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="15000">
+              </label>
+             </div>
+          </div>
+          <legend class="legend-filter-extra">Сетка:</legend>
+<ul class="filter-extra">
+    <li class="filter-option ">
+      <input class=" filter-input visually-hidden " type="checkbox" name="adaptive" id="filter-adaptive" checked>
+      <label for="filter-adaptive">Адаптивная</label>
+      </li>
+      <li class="filter-option ">
+        <input class=" filter-input visually-hidden " type="checkbox" name="fixation" id="filter-fixation" checked>
+        <label for="filter-fixation">Фиксированная</label>
+        </li>
+        <li class="filter-option ">
+          <input class=" filter-input visually-hidden " type="checkbox" name="rubber" id="filter-rubber" checked>
+          <label for="filter-rubber">Резиновая</label>
+          </li>
+
+</ul>
+
+<legend class="legend-filter-extra legend-feature">Особенности:</legend>
+<ul class="filter-extra">
+  <li class="filter-option ">
+    <input class=" filter-input-one visually-hidden " type="checkbox" name="adaptive" id="filter-slider" checked>
+    <label for="filter-slider">Слайдер</label>
+    </li>
+    <li class="filter-option ">
+      <input class=" filter-input-one visually-hidden " type="checkbox" name="adaptive" id="filter-block" checked>
+      <label for="filter-block">Блок преимуществ</label>
+      </li>
+      <li class="filter-option ">
+        <input class=" filter-input-one visually-hidden " type="checkbox" name="fixation" id="filter-news" checked>
+        <label for="filter-news">Новости</label>
+        </li>
+        <li class="filter-option ">
+          <input class=" filter-input-one visually-hidden " type="checkbox" name="rubber" id="filter-gallery" checked>
+          <label for="filter-gallery">Галерея</label>
+          </li>
+          <li class="filter-option ">
+            <input class=" filter-input-one visually-hidden " type="checkbox" name="rubber" id="filter-basket" checked>
+            <label for="filter-basket">Корзина</label>
+            </li>
+</ul>
+
+        </fieldset>
+        <a class="list-link-not" href="link.html">Показать</a>
       </section>
     <section class="list">
-      <h2>Список шаблонов</h2>
+      <h2 class="visually-hidden">Список шаблонов</h2>
 
 <div class="list-chek-extra">
-      <div class="list-chek-two">
-        Сортировать:
+      <div class="list-chek-extra-two">
+        <p>Сортировать:</p>
       </div>
-       <div class="list-chek-three">
-         <a class="list-chek-link" href="#">по цене</a>
+       <div class="list-chek-extra-three">
+         <a class="list-chek-link-one" href="#">по цене</a>
          <a class="list-chek-link-one" href="#">по типу </a>
          <a class="list-chek-link-one" href="#">по названию</a>
        </div>
+       <div class="list-down">
+         
+        <a class="list-down-one" href="#"></a>
+        
+        
+        <a class="list-down-two" href="#"></a>
+        
+        </div>  
 </div>
 
 
       <ul class="list-chek">
         
         <li class="list-chek-one">
-        <a href="template.html"><img src="img/img-sedona.jpg" width="358" height="576" alt="Шаблон сайта Седона"></a>
+          <div class="clock">
+          <div class="ultra-dec">
+          <span class="ultra-link"></span>
+          <span class="ultra-link"></span>
+          <span class="ultra-link"></span></div>
+          
+        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-sedona.jpg" width="360" height="578" alt="Шаблон сайта Седона" style="border-radius: 0 0 5px 5px"></a>
         <div class="list-chek-tow">
-        <h3>SEDONA</h3>
-        <p>Информационный сайт для туристов</p>
-        <p><a class="list-link" href="link.html">9 900 р</a></p>
+        <a class="list-link-site" href="#">SEDONA</a>
+        <p>Информационный сайт<br> для туристов</p>
+        <a class="list-link" href="link.html">9 900 р</a>
         </div>
+      </div>
         </li>
         <li class="list-chek-one">
-        <a href="template.html"><img src="img/img-pink.jpg" width="358" height="576" alt="Шаблон сайта Пинк"></a>
-        </li>
+          <div class="clock">
+          <div class="ultra-dec">
+          <span class="ultra-link"></span>
+          <span class="ultra-link"></span>
+          <span class="ultra-link"></span></div>
+        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-pink.jpg" width="360" height="578" alt="Шаблон сайта Пинк" style="border-radius: 0 0 5px 5px"></a>
+        <div class="list-chek-tow">
+          <a class="list-link-site" href="#">Pink App</a>
+          <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+          <a class="list-link" href="link.html">9 900 р</a>
+          </div>
+        </div>  
+      </li>
         <li class="list-chek-one">
-        <a href="template.html"><img src="img/img-barbershop.jpg" width="358" height="576" alt="Шаблон сайта Бородинский"></a>
-        </li>
+          <div class="clock">
+          <div class="ultra-dec">
+          <span class="ultra-link"></span>
+          <span class="ultra-link"></span>
+          <span class="ultra-link"></span></div>
+        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-barbershop.jpg" width="360" height="578" alt="Шаблон сайта Бородинский" style="border-radius: 0 0 5px 5px"></a>
+        <div class="list-chek-tow">
+          <a class="list-link-site" href="#">Barbershop</a>
+          <p>Сайт салона красоты.<br>Для мужчин, да.</p>
+          <a class="list-link" href="link.html">9 900 р</a>
+          </div>
+        </div>   
+      </li>
         <li class="list-chek-one">
-        <a href="template.html"><img src="img/img-mishka.jpg" width="358" height="576" alt="Шаблон сайта Мишки"></a>
-        </li>
+          <div class="clock">
+          <div class="ultra-dec">
+          <span class="ultra-link"></span>
+          <span class="ultra-link"></span>
+          <span class="ultra-link"></span></div>
+        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-mishka.jpg" width="360" height="578" alt="Шаблон сайта Мишки" style="border-radius: 0 0 5px 5px"></a>
+        <div class="list-chek-tow">
+          <a class="list-link-site" href="#">MISHKA</a>
+          <p>Интернет-магазин <br>вязаных игрушек</p>
+          <a class="list-link" href="link.html">9 900 р</a>
+          </div>
+        </div>     
+      </li>
         <li class="list-chek-one">
-        <a href="template.html"><img src="img/img-aplus.jpg" width="358" height="576" alt="Шаблон сайта Аплус"></a>
-        </li>
+          <div class="clock">
+          <div class="ultra-dec">
+          <span class="ultra-link"></span>
+          <span class="ultra-link"></span>
+          <span class="ultra-link"></span></div>
+        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-aplus.jpg" width="360" height="578" alt="Шаблон сайта Аплус" style="border-radius: 0 0 5px 5px"></a>
+        <div class="list-chek-tow">
+          <a class="list-link-site" href="#">A Plus</a>
+          <p>Лендинг курсов повышения<br>квалификации</p>
+          <a class="list-link" href="link.html">9 900 р</a>
+          </div>
+        </div>      
+      </li>
         <li class="list-chek-one">
-        <a href="template.html"><img src="img/img-kvast.jpg" width="358" height="576" alt="Шаблон сайта Кваст"></a>
-        </li>
+          <div class="clock">
+          <div class="ultra-dec">
+          <span class="ultra-link"></span>
+          <span class="ultra-link"></span>
+          <span class="ultra-link"></span></div>
+        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-kvast.jpg" width="360" height="578" alt="Шаблон сайта Кваст" style="border-radius: 0 0 5px 5px"></a>
+        <div class="list-chek-tow">
+          <a class="list-link-site" href="#">КВАСТ</a>
+          <p>Промо-сайт производителя<br>крафтового кваса</p>
+          <a class="list-link" href="link.html">9 900 р</a>
+          </div>
+        </div> 
+      </li>
         </ul>
-        
-<a class="number-one" href="#">1</a>
-<a class="number-one" href="#">2</a>
-<a class="number-one" href="#">3</a>
-<a class="number-one" href="#">Следующая</a>
-      
+       <ul class="number-one-link">
+<li class="number-one"> <a  href="#">1</a>
+</li>
+<li class="number-one"><a  href="#">2</a>
+</li>
+<li class="number-one"><a  href="#">3</a>
+</li>
+<li class="number-one number-one-two"><a  href="#">Следующая</a>
+</li>
+      </ul> 
       </section>
       </div>
       
@@ -95,31 +233,34 @@
 <footer class="main-footer">
   <div class="footer-contacts">
     <a class="contacts-image">
-      <img src="img/map.png" width="1440" height="416" alt="карта, как до нас добраться»">
+      <img src="img/map.png" width="1440" height="416"  alt="карта, как до нас добраться»">
     </a>
   </div>
+  
   <div class="main-footer-link">
+    <div class="main-footer-extra">
     <h2>NЁRDS DESIGN STUDIO</h2>
     <p class="footer-item">191186, Санкт-Петербург,<br>
-       ул. Б. Конюшенная, д. 19/8<br>
-       <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-    <a class="contacts-link" href="link.html">Напиши нам</a>
-  
+       ул. Б. Конюшенная, д. 19/8<br><br>
+       <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+    <a class="contacts-link" href="link.html">Напишите нам</a>
+    </div>
   <section class="network">
-    <h2>Социальные сети</h2>
+    <h2 class="visually-hidden">Социальные сети</h2>
     <div class="net-wrapper">
-    <ul class="network-list">
-      <li class="network-link" ><a href="#">Вконтакте</a></li>
-      <li class="network-link" ><a href="#">фейсбук</a></li>
-      <li class="network-link" ><a href="#">Инстаграм</a></li>
-    </ul>
+    <div class="network-list">
+      <a class="network-link-two" href="#"></a>
+      <a class="network-link-one" href="#"></a>
+      <a class="network-link" href="#"></a>
+    </div>
     <div class="net-one">
-    <p class="network-red" >Давайте дружить это выгодно!<p>
+    <p class="network-red" >Давайте дружить, это выгодно!</p>
     <p class="network-blue">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </div>
   </section>
 </div>
 </footer>
+
   </body>
 </html>
