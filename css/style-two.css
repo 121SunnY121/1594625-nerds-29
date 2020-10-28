@@ -103,6 +103,7 @@ img {
   
 }
 
+
 .site-navigation a,
 .link-basket  {
   color:var(--basic-black);
@@ -119,6 +120,7 @@ img {
   padding-left: 50px;
   position: relative;
   margin-right: -15px;
+  
 }
 .link-basket::before {
   content: "";
@@ -147,15 +149,23 @@ img {
 .link-basket:focus
  {
   color:var(--basic-black);
-  border-bottom: 2px solid var(--basic-red);
+  box-shadow:0px 2px 0px 0px  var(--basic-red);
   opacity: 1;
+  padding-bottom:19px;
 }
+
 .site-navigation a:active,
 .link-basket:active
  {
   color:var(--basic-black);
   opacity: 0.3
 }
+.site-navigation a.active{
+  padding-bottom:19px;
+  box-shadow:0px 2px 0px 0px  var(--basic-red);
+  
+}
+
 
                         /* main */
 .filter-list-two{
@@ -222,7 +232,9 @@ margin-bottom: 55px;
   margin-left: 27px;
   margin-right: -5px;
 }
-
+.list-chek-link-one.active{
+  opacity: 1;
+}
 .list-chek-extra-two {
   font-size: 18px;
   line-height: 30px;
@@ -233,7 +245,7 @@ margin-bottom: 55px;
   padding-left: 15px;
 }
 
-.list-down-one{
+.list-down-one {
     display:inline-block;
 border-left: 6px solid transparent;
 border-right: 6px solid transparent;
@@ -258,11 +270,12 @@ margin-bottom: -24px;
 .list-down-one:hover, .list-down-two:hover{
   opacity: 0.6;
 }
-.list-down-one:focus, .list-down-two:focus{
+.list-down-one:active, .list-down-two:active{
   opacity: 1;
 }
-
-
+.list-down-one.active{
+  opacity: 1;
+}
 
 .list-chek-one{
   position: relative;
@@ -278,20 +291,22 @@ margin-bottom: -24px;
   border-radius: 5px 5px 5px 5px;
 }
 .image-site{
-  width: 359px;
-  height: 577px;
+  width: 358px;
+  height: 578px;
   border: 1px solid var(--basic-normal-extra-dark-gray);
 }
-
+.image-site{
+  border-radius: 0 0 5px 5px;
+}
 .ultra-site:hover .image-site, .clock:hover .image-site, .ultra-link:hover .image-site{
-  width: 360px;
+  width: 358px;
   height: 578px;
-  border: 0px solid ;
+  border: 1px solid transparent;
 }
 .ultra-site::before{
   content: "";
   display:block;
-  width: 361px;
+  width: 360px;
   height: 40px;
   background: var(--basic-extra-current-gray);
   opacity: 0.1;
@@ -419,7 +434,7 @@ margin-right:5px;
 }
 .number-one a{
   display: block;
-  padding: 15px 21px;
+  padding: 12px 18px;
   text-align: center;
     color:var(--basic-black);
     
@@ -431,11 +446,14 @@ margin-right:5px;
     font-weight: 500;
     border-radius: 3px;
     margin-right: 10px;
- 
+    border: 3px solid transparent;
+    
 }
 .number-one-two a{
   display: block;
-  padding: 15px 79px;
+  padding: 12px 76px;
+  border: 3px solid transparent;
+  
 }
 .number-list{
   text-align: center;
@@ -445,6 +463,12 @@ margin-right:5px;
 }
 
 .number-one a:focus{
+  background: var(--basic-white);
+  box-sizing: border-box;
+  border: 3px solid var(--basic-extra-not-dark-gray);
+  padding: 12px 18px;
+}
+.number-one a.active{
   background: var(--basic-white);
   box-sizing: border-box;
   border: 3px solid var(--basic-extra-not-dark-gray);
@@ -554,6 +578,7 @@ margin-right:5px;
   
   .filter-extra{
     list-style: none;
+    margin-top:-3px;
   }
   .filter-option label  {
     position: relative;
@@ -630,11 +655,14 @@ margin-right:5px;
     opacity: 1;
   }
   .legend-feature{
-    margin-top:47px;
+    margin-top:27px;
+  }
+  .legend-feature-one{
+    margin-top:0px;
   }
   .list-link-not{
     display: block;
-  padding: 16px 18px;
+  padding: 16px 89px;
   text-align: center;
     color:var(--basic-black);
     
@@ -645,7 +673,7 @@ margin-right:5px;
     line-height: 18px;
     font-weight: 500;
     border-radius: 3px;
-    margin-right: 125px;
+    
  margin-top: 30px;
   }
   .list-link-not:hover{
@@ -654,7 +682,7 @@ margin-right:5px;
   
   
   .list-link-not:active{
-    padding: 15px 21px;
+    
     background: var(--basic-extra-not-normal-gray);
     box-shadow: inset 0px 3px 0px var(--basic-normal-dark-gray);
     color:var(--basic-extra-blacke);
@@ -679,6 +707,14 @@ margin-right:5px;
     font-size: 16px;
     line-height: 18px;
      color:var(--basic-extra-gray);
+     margin-bottom: 17px;
+     margin-left: 1px;
+   }
+   .footer-item-one{
+    font-size: 16px;
+    line-height: 18px;
+     color:var(--basic-extra-gray);
+     
      margin-bottom: 52px;
      margin-left: 1px;
    }

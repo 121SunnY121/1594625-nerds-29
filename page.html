@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swa">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style-two.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -20,7 +20,7 @@
              <ul class="site-navigation">
              <li><a href="#">Студия</a></li>
              <li><a href="#">Клиенты</a></li>
-             <li><a href="page.html">Магазин</a></li>
+             <li ><a href="page.html" class=" active">Магазин</a></li>
              <li><a href="#">Контакты</a></li>
              </ul>
              <a  class="link-basket" href="#">Корзина</a>
@@ -38,6 +38,7 @@
     <div class="filter-list-one">
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-item">
           <legend>Стоимость:</legend>
           <div class="range-filter">
@@ -60,49 +61,53 @@
               </label>
              </div>
           </div>
+          </fieldset>
+          <fieldset class="filter-item">
           <legend class="legend-filter-extra">Сетка:</legend>
 <ul class="filter-extra">
     <li class="filter-option ">
-      <input class=" filter-input visually-hidden " type="checkbox" name="adaptive" id="filter-adaptive" checked>
+      <input class=" filter-input visually-hidden " type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
       <label for="filter-adaptive">Адаптивная</label>
       </li>
       <li class="filter-option ">
-        <input class=" filter-input visually-hidden " type="checkbox" name="fixation" id="filter-fixation" checked>
+        <input class=" filter-input visually-hidden " type="radio" name="product-group" value="fixation" id="filter-fixation" checked>
         <label for="filter-fixation">Фиксированная</label>
         </li>
         <li class="filter-option ">
-          <input class=" filter-input visually-hidden " type="checkbox" name="rubber" id="filter-rubber" checked>
+          <input class=" filter-input visually-hidden " type="radio" name="product-group" value="rubber" id="filter-rubber" checked>
           <label for="filter-rubber">Резиновая</label>
           </li>
 
 </ul>
-
-<legend class="legend-filter-extra legend-feature">Особенности:</legend>
-<ul class="filter-extra">
+</fieldset>
+<fieldset class="filter-item legend-feature">
+<legend class="legend-filter-extra ">Особенности:</legend>
+<ul class="filter-extra legend-feature-one">
   <li class="filter-option ">
-    <input class=" filter-input-one visually-hidden " type="checkbox" name="adaptive" id="filter-slider" checked>
+    <input class=" filter-input-one visually-hidden " type="checkbox" name="slider" id="filter-slider" checked>
     <label for="filter-slider">Слайдер</label>
     </li>
     <li class="filter-option ">
-      <input class=" filter-input-one visually-hidden " type="checkbox" name="adaptive" id="filter-block" checked>
+      <input class=" filter-input-one visually-hidden " type="checkbox" name="block" id="filter-block" checked>
       <label for="filter-block">Блок преимуществ</label>
       </li>
       <li class="filter-option ">
-        <input class=" filter-input-one visually-hidden " type="checkbox" name="fixation" id="filter-news" checked>
+        <input class=" filter-input-one visually-hidden " type="checkbox" name="news" id="filter-news" checked>
         <label for="filter-news">Новости</label>
         </li>
         <li class="filter-option ">
-          <input class=" filter-input-one visually-hidden " type="checkbox" name="rubber" id="filter-gallery" checked>
+          <input class=" filter-input-one visually-hidden " type="checkbox" name="gallery" id="filter-gallery" checked>
           <label for="filter-gallery">Галерея</label>
           </li>
           <li class="filter-option ">
-            <input class=" filter-input-one visually-hidden " type="checkbox" name="rubber" id="filter-basket" checked>
+            <input class=" filter-input-one visually-hidden " type="checkbox" name="basket" id="filter-basket" checked>
             <label for="filter-basket">Корзина</label>
             </li>
 </ul>
 
         </fieldset>
-        <a class="list-link-not" href="link.html">Показать</a>
+        <button type="submit" class="list-link-not">Показать</button>
+      </form>
       </section>
     <section class="list">
       <h2 class="visually-hidden">Список шаблонов</h2>
@@ -112,13 +117,13 @@
         <p>Сортировать:</p>
       </div>
        <div class="list-chek-extra-three">
-         <a class="list-chek-link-one" href="#">по цене</a>
+         <a class="list-chek-link-one active" href="#">по цене</a>
          <a class="list-chek-link-one" href="#">по типу </a>
          <a class="list-chek-link-one" href="#">по названию</a>
        </div>
        <div class="list-down">
          
-        <a class="list-down-one" href="#"></a>
+        <a class="list-down-one active" href="#" ></a>
         
         
         <a class="list-down-two" href="#"></a>
@@ -136,7 +141,7 @@
           <span class="ultra-link"></span>
           <span class="ultra-link"></span></div>
           
-        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-sedona.jpg" width="360" height="578" alt="Шаблон сайта Седона" style="border-radius: 0 0 5px 5px"></a>
+        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-sedona.jpg" width="360" height="578" alt="Шаблон сайта Седона" ></a>
         <div class="list-chek-tow">
         <a class="list-link-site" href="#">SEDONA</a>
         <p>Информационный сайт<br> для туристов</p>
@@ -150,7 +155,7 @@
           <span class="ultra-link"></span>
           <span class="ultra-link"></span>
           <span class="ultra-link"></span></div>
-        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-pink.jpg" width="360" height="578" alt="Шаблон сайта Пинк" style="border-radius: 0 0 5px 5px"></a>
+        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-pink.jpg" width="360" height="578" alt="Шаблон сайта Пинк" ></a>
         <div class="list-chek-tow">
           <a class="list-link-site" href="#">Pink App</a>
           <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
@@ -164,7 +169,7 @@
           <span class="ultra-link"></span>
           <span class="ultra-link"></span>
           <span class="ultra-link"></span></div>
-        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-barbershop.jpg" width="360" height="578" alt="Шаблон сайта Бородинский" style="border-radius: 0 0 5px 5px"></a>
+        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-barbershop.jpg" width="360" height="578" alt="Шаблон сайта Бородинский" ></a>
         <div class="list-chek-tow">
           <a class="list-link-site" href="#">Barbershop</a>
           <p>Сайт салона красоты.<br>Для мужчин, да.</p>
@@ -178,7 +183,7 @@
           <span class="ultra-link"></span>
           <span class="ultra-link"></span>
           <span class="ultra-link"></span></div>
-        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-mishka.jpg" width="360" height="578" alt="Шаблон сайта Мишки" style="border-radius: 0 0 5px 5px"></a>
+        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-mishka.jpg" width="360" height="578" alt="Шаблон сайта Мишки" ></a>
         <div class="list-chek-tow">
           <a class="list-link-site" href="#">MISHKA</a>
           <p>Интернет-магазин <br>вязаных игрушек</p>
@@ -192,7 +197,7 @@
           <span class="ultra-link"></span>
           <span class="ultra-link"></span>
           <span class="ultra-link"></span></div>
-        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-aplus.jpg" width="360" height="578" alt="Шаблон сайта Аплус" style="border-radius: 0 0 5px 5px"></a>
+        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-aplus.jpg" width="360" height="578" alt="Шаблон сайта Аплус" ></a>
         <div class="list-chek-tow">
           <a class="list-link-site" href="#">A Plus</a>
           <p>Лендинг курсов повышения<br>квалификации</p>
@@ -206,7 +211,7 @@
           <span class="ultra-link"></span>
           <span class="ultra-link"></span>
           <span class="ultra-link"></span></div>
-        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-kvast.jpg" width="360" height="578" alt="Шаблон сайта Кваст" style="border-radius: 0 0 5px 5px"></a>
+        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-kvast.jpg" width="360" height="578" alt="Шаблон сайта Кваст" ></a>
         <div class="list-chek-tow">
           <a class="list-link-site" href="#">КВАСТ</a>
           <p>Промо-сайт производителя<br>крафтового кваса</p>
@@ -216,7 +221,7 @@
       </li>
         </ul>
        <ul class="number-one-link">
-<li class="number-one"> <a  href="#">1</a>
+<li class="number-one "> <a class="active"  href="#">1</a>
 </li>
 <li class="number-one"><a  href="#">2</a>
 </li>
@@ -241,8 +246,8 @@
     <div class="main-footer-extra">
     <h2>NЁRDS DESIGN STUDIO</h2>
     <p class="footer-item">191186, Санкт-Петербург,<br>
-       ул. Б. Конюшенная, д. 19/8<br><br>
-       <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+       ул. Б. Конюшенная, д. 19/8</p>
+      <p class="footer-item-one"><a class="contacts-phone " href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
     <a class="contacts-link" href="link.html">Напишите нам</a>
     </div>
   <section class="network">
