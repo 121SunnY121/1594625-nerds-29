@@ -17,13 +17,13 @@
             <img src="img/nerds-logo.svg" width="159" height="65" 
              alt="Логотип дизайнерской студии Нердс">
             </a>
-             <ul class="site-navigation">
-             <li><a href="link.html">Студия</a></li>
-             <li><a href="link.html">Клиенты</a></li>
-             <li><a href="page.html">Магазин</a></li>
-             <li><a href="link.html">Контакты</a></li>
-             </ul>
-             <a  class="link-basket" href="link.html">Корзина</a>
+            <ul class="site-navigation">
+              <li class="site-navigation-normal"><a href="#" >Студия</a></li>
+              <li class="site-navigation-normal"><a href="#" >Клиенты</a></li>
+              <li class="site-navigation-normal"><a href="page.html"   >Магазин</a></li>
+              <li class="site-navigation-normal"><a href="#" >Контакты</a></li>
+              </ul>
+              <a  class="link-basket" href="#" >Корзина</a>
           </div>
     </nav>
     </div>
@@ -38,7 +38,7 @@
   <button class="feature-slide " type="button"></button>
   <button class="feature-slide " type="button"></button>
   </div>  
-    <div class="features-extra-slide features-slide-one slide-current  ">
+    <div class="features-extra-slide features-slide-one   slide-current">
       <section class="features  "> 
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="features-slide-content  ">
@@ -48,15 +48,15 @@
       </div>
       </section>    
   </div>
-  <div class="features-extra-slide features-slide-two  ">
+  <div class="features-extra-slide features-slide-two   ">
   <div class="features-slide-content ">
     <h3>Любим математику<br>как никто другой</h3>
-    <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
-    <a class="link-feature" href="link.html">Узнать больше</a>
+    <p class="features-slide-content-two">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
+    <a class="link-feature link-feature-extra" href="link.html">Узнать больше</a>
     </div>
   
 </div>
-<div class="features-extra-slide features-slide-two ">
+<div class="features-extra-slide features-slide-three ">
     <div class="features-slide-content ">
     <h3>Только ночь,<br> только хардкор</h3>
     <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
@@ -195,26 +195,26 @@
   
   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
     <div class="modal-info">
-    <p>
-      <p class="modal-description">Ваше имя:</p>
-      <label class="visually-hidden" for="login-text">Имя</label>
+    <div>
+      
+      <label class="modal-description" for="login-text">Ваше имя:</label>
       <input class="login-icon-text" id="login-text" type="text" name="name" placeholder="Имя Фамилия">
-    </p>
-    <p class="modal-description">Ваш email:</p>
-    <p>
-      <label class="visually-hidden" for="login-login">маил</label>
+    </div>
+    
+    <div class="modal-info-login">
+      <label class="modal-description-one" for="login-login">Ваш email:</label>
       <input class="login-icon-user" id="login-login" type="email" name="mail" placeholder="email@example.com">
-    </p>
+    </div>
   </div>
-    <p class="modal-description">Текст письма:</p>
-    <p>
-      <label class="visually-hidden" for="login-text-one">дополнительный текст</label>
-      <input class="login-icon-text-one" id="login-text-one" type="text" name="text" placeholder="В свободной форме">
-    </p>
+    
+    <div>
+      <label class="modal-description-two" for="login-text-one">Текст письма:</label>
+      <textarea  class="login-icon-text-one" id="login-text-one"  name="text"  placeholder="В свободной форме"></textarea>
+    </div>
     
     <button class="button-modal" type="submit">Отправить</button>
   </form>
-  <button class="modal-close" type="button"aria-label="Закрыть"></button>
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
 
 

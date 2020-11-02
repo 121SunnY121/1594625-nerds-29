@@ -18,12 +18,12 @@
              alt="Логотип дизайнерской студии Нердс">
             </a>
              <ul class="site-navigation">
-             <li class="site-navigation-normal"><a href="#" style=" padding-left:0; padding-right:0;">Студия</a></li>
-             <li class="site-navigation-normal"><a href="#" style=" padding-left:0; padding-right:0;">Клиенты</a></li>
-             <li class="site-navigation-normal"><a href="page.html" class="  active" style=" padding-left:0; padding-right:0;" >Магазин</a></li>
-             <li class="site-navigation-normal"><a href="#" style=" padding-left:0; padding-right:0;">Контакты</a></li>
+             <li class="site-navigation-normal"><a href="#" >Студия</a></li>
+             <li class="site-navigation-normal"><a href="#" >Клиенты</a></li>
+             <li class="site-navigation-normal"><a href="page.html" class="  active"  >Магазин</a></li>
+             <li class="site-navigation-normal"><a href="#" >Контакты</a></li>
              </ul>
-             <a  class="link-basket" href="#" style=" padding-left:40px; padding-right:0;padding-bottom:0;">Корзина</a>
+             <a  class="link-basket" href="#" >Корзина</a>
           </div>
     </nav>
     </div>
@@ -266,6 +266,35 @@
   </section>
 </div>
 </footer>
+
+<section class="modal modal-login">
+  <h2>Напишите нам</h2>
+  
+  
+  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="modal-info">
+    <div>
+      
+      <label class="modal-description" for="login-text">Ваше имя:</label>
+      <input class="login-icon-text" id="login-text" type="text" name="name" placeholder="Имя Фамилия">
+    </div>
+    
+    <div class="modal-info-login">
+      <label class="modal-description-one" for="login-login">Ваш email:</label>
+      <input class="login-icon-user" id="login-login" type="email" name="mail" placeholder="email@example.com">
+    </div>
+  </div>
+    
+    <div>
+      <label class="modal-description-two" for="login-text-one">Текст письма:</label>
+      <textarea  class="login-icon-text-one" id="login-text-one"  name="text"  placeholder="В свободной форме"></textarea>
+    </div>
+    
+    <button class="button-modal" type="submit">Отправить</button>
+  </form>
+  <button class="modal-close" type="button"aria-label="Закрыть"></button>
+</section>
+
 
   </body>
 </html>

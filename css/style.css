@@ -103,8 +103,8 @@ img {
   
 }
 .site-navigation-normal {
-  margin-left:18px;
-  margin-right:29px;
+  margin-left:22px;
+  margin-right:24px;
   
 }
 
@@ -115,22 +115,19 @@ img {
   
   
 }
-.site-navigation a ,
-.link-basket a {
-  padding: 26px 23px;
-}
+
 .link-basket {
   padding: 26px 15px;
   padding-left: 50px;
   position: relative;
-  margin-right: 0px;
+  margin-right: -15px;
   
 }
 .link-basket::before {
   content: "";
   position: absolute;
-  top: 33px;
-  left: 0px;
+  top: 32px;
+  left: 8px;
   width: 24px;
   height: 15px;
   background-image: url("../img/cart-icon.svg");
@@ -279,6 +276,11 @@ left: 408px;
     .features-slide-content p{
       margin-bottom: 38px;
     }
+    .features-slide-content-two{
+      margin-top: 38px;
+      
+    }
+
     /*
     .features-slide-two h3, .features-slide-three h3{
       margin-bottom: 40px;
@@ -288,7 +290,9 @@ left: 408px;
       
     }
     */
-
+.link-feature-extra{
+  margin-top:-10px;
+}
   .link-feature {
     
     text-align: center;
@@ -304,6 +308,7 @@ left: 408px;
     border-radius: 3px;
     padding: 16px 55px;
     margin-bottom: 80px;
+    
   }
   .link-feature:hover{
     background-color:var(--basic-normal-red);
@@ -487,6 +492,7 @@ margin-top: -3px;
 }
 .partners{
   margin-top: 43px;
+  margin-bottom: 93px;
   
 }
 .partners-wrapper{
@@ -612,6 +618,7 @@ margin-top: -3px;
  .contacts-phone{
     color:var(--basic-extra-gray);
     
+    
  }
  .contacts-link {
    display: inline-block;
@@ -626,7 +633,7 @@ margin-top: -3px;
     font-weight: 500;
     border-radius: 3px;
     padding: 18px 45px 15px;
-    margin-top: -15px;
+    margin-top: 17px;
  }
  .contacts-link:hover{
     background-color:var(--basic-normal-red);
@@ -1335,8 +1342,8 @@ margin: 0;
     }
     
     .modal-login {
-      display: none;
-
+      
+display:none;
       top: 120px;
       bottom: auto;
       width: 300px;
@@ -1353,38 +1360,57 @@ margin: 0;
     }
     
     .modal-description {
-      margin-top: 17px;
-      margin-bottom: 7px;
+      display: block;
+      margin-top: 16px;
+      margin-bottom: 10px;
       margin-left: 100px;
-      margin-right:-180px;
+      font-size: 16px;
+      line-height: 18px;   
+      font-weight:700;
+    }
+    .modal-description-one{
+      display: block;
+      margin-top: 16px;
+      margin-bottom: 9px;
+      margin-left: 37px;
+      font-size: 16px;
+      line-height: 18px;   
+      font-weight:700;
+    }
+    .modal-description-two {
+      display: block;
+      margin-top: 34px;
+      margin-bottom: 9px;
+      margin-left: 100px;
       font-size: 16px;
       line-height: 18px;   
       font-weight:700;
     }
     .login-icon-text-one{
       width: 740px;
-      height: 38px;
+      height: 35px;
       margin-left: 100px;
-      margin-top:-6px;
-      padding-left:15px;
+      
+      padding-left:13px;
       padding-bottom:72px;
+      padding-top: 13px;
+      
     }
     
     .login-icon-user{
       width: 340px;
       height: 44px;
-      margin-top:30px;
-      margin-left: 100px;
+      
+      margin-left: 37px;
       padding-left:13px;
       
     }
     .login-icon-text{
       width: 340px;
       height: 44px;
-      margin-top:46px;
       margin-left: 100px;
       padding-left:15px;
-      margin-right:-60px;
+      
       
     }
     .login-icon-text, .login-icon-user, .login-icon-text-one{
@@ -1456,9 +1482,7 @@ margin: 0;
 .modal-close::after {
   transform: rotate(-45deg);
 }
-    .login-form input:focus {
-      border-color: var(--special);
-    }
+    
     .modal-info  {
       display: flex;
       
@@ -1466,3 +1490,4 @@ margin: 0;
       margin: 15px 0;
       
     }
+    
