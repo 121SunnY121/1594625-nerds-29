@@ -29,6 +29,7 @@
   --basic-extra-not-current-dark-gray:#B4B9BB;
   --basic-normal-dark-gray:rgba(0, 1, 1, 0.1);
   --basic-normal-extra-dark-gray:rgba(0, 0, 0, 0.1);
+  --basic-normal-extra-dark-gray-one: rgba(0, 0, 0, 0.4);
   }
 body {
   
@@ -1325,8 +1326,8 @@ margin: 0;
       color: var(--basic-black);
       
       
-      background-color: #FFFFFF;
-      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+      background-color: var(--basic-white);
+      box-shadow: 0px 20px 40px var(--basic-normal-extra-dark-gray-one);
       background-position: 0 0;
       background-repeat: repeat;
     }
