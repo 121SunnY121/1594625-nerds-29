@@ -657,17 +657,7 @@ margin-top: -3px;
    
   }
   
-  .main-footer-link:before{
-   display: block;
-   content: "";
-   position: absolute;
-   min-height: 190px;
-   width: 231px;
-   background: url(../img/map-marker1.png);
-   margin-top:-337px ;
-   margin-left: 682px;
-   
-  }
+  
   
   .main-footer-extra {
    position: absolute;
@@ -1541,4 +1531,7 @@ display:none;
     }
     .modal-error .login-icon-user::placeholder, .modal-error .login-icon-text::placeholder {
       color:var(--basic-normal-red);
+    }
+    .footer-contacts iframe {
+      border: none;
     }
