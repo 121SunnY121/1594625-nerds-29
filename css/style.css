@@ -590,6 +590,7 @@ margin-top: -3px;
  footer-contacts */
  .main-footer{
   margin-top: -11px;
+  
 }
 .main-footer-extra h2{
  font-size: 18px;
@@ -634,7 +635,7 @@ margin-top: -3px;
     font-weight: 500;
     border-radius: 3px;
     padding: 18px 45px 15px;
-    margin-top: 17px;
+    margin-top: 20px;
  }
  .contacts-link:hover{
     background-color:var(--basic-normal-red);
@@ -675,6 +676,7 @@ margin-top: -3px;
  }
  .footer-contacts{
   margin: 0 auto;
+  
                        
   text-align: center;
  }
@@ -1536,3 +1538,11 @@ display:none;
     .footer-contacts iframe {
       border: none;
     }
+    
+     .footer-contacts iframe {
+        position: absolute;
+        width: 100%;
+        height: 420px;
+        left:0;
+    }
+    
