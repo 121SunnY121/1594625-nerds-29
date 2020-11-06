@@ -1,302 +1,305 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swa">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body class="page-body">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style-minim.css" rel="stylesheet">
+</head>
+
+<body class="page-body">
     <header class="main-header">
-      <div class="content-one">
-      <div class="main-header-one">
-    <nav class="main-navigation">
-         <div class="site-navigation-wrapper">
-            <a class="main-header-logo" href="index.html">
+        <div class="content-one">
+            <div class="main-header-one">
+                <nav class="main-navigation">
+                    <div class="site-navigation-wrapper">
+                        <a class="main-header-logo" href="index.html">
             <img src="img/nerds-logo.svg" width="159" height="65" 
              alt="Логотип дизайнерской студии Нердс">
             </a>
-             <ul class="site-navigation">
-             <li class="site-navigation-normal"><a href="#" >Студия</a></li>
-             <li class="site-navigation-normal"><a href="#" >Клиенты</a></li>
-             <li class="site-navigation-normal"><a href="page.html" class="  active"  >Магазин</a></li>
-             <li class="site-navigation-normal"><a href="#" >Контакты</a></li>
-             </ul>
-             <a  class="link-basket" href="#" >Корзина</a>
-          </div>
-    </nav>
-    </div>
-    </div>
+                        <ul class="site-navigation">
+                            <li class="site-navigation-normal"><a href="#">Студия</a></li>
+                            <li class="site-navigation-normal"><a href="#">Клиенты</a></li>
+                            <li class="site-navigation-normal"><a href="page.html" class="  active">Магазин</a></li>
+                            <li class="site-navigation-normal"><a href="#">Контакты</a></li>
+                        </ul>
+                        <a class="link-basket" href="#">Корзина</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
-<main class="filter-list">
-  <div class="content-one">
-    <div class="filter-list-two">
-    <h1>Магазин готовых шаблонов</h1>
-    </div>
-  </div>
-    <div class="filter-list-one">
-      <section class="filter">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter-item">
-          <legend>Стоимость:</legend>
-          <div class="range-filter">
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar" style="width: 62%; margin-left: 6%">
-                </div>
-              </div>
-              <div class="toggle toggle-min" tabindex="0" style="left: 6%">
-              </div>
-            <div class="toggle toggle-max" tabindex="0" style="left: 62%">
+    <main class="filter-list">
+        <div class="content-one">
+            <div class="filter-list-two">
+                <h1>Магазин готовых шаблонов</h1>
             </div>
-            </div>
-            <div class="price-controls">
-              <label class="min-price">
+        </div>
+        <div class="filter-list-one">
+            <section class="filter">
+                <h2 class="visually-hidden">Фильтр товаров</h2>
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset class="filter-item">
+                        <legend>Стоимость:</legend>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar" style="width: 62%; margin-left: 6%">
+                                    </div>
+                                </div>
+                                <div class="toggle toggle-min" tabindex="0" style="left: 6%">
+                                </div>
+                                <div class="toggle toggle-max" tabindex="0" style="left: 62%">
+                                </div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">
                 от <input type="number" name="min-price" value="0">
               </label>
-              <label class="max-price">
+                                <label class="max-price">
                 до <input type="number" name="max-price" value="15000">
               </label>
-             </div>
-          </div>
-          </fieldset>
-          <fieldset class="filter-item">
-          <legend class="legend-filter-extra">Сетка:</legend>
-<ul class="filter-extra">
-    <li class="filter-option ">
-      <input class=" filter-input visually-hidden " type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
-      <label for="filter-adaptive">Адаптивная</label>
-      </li>
-      <li class="filter-option ">
-        <input class=" filter-input visually-hidden " type="radio" name="product-group" value="fixation" id="filter-fixation" >
-        <label for="filter-fixation">Фиксированная</label>
-        </li>
-        <li class="filter-option ">
-          <input class=" filter-input visually-hidden " type="radio" name="product-group" value="rubber" id="filter-rubber" >
-          <label for="filter-rubber">Резиновая</label>
-          </li>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="filter-item">
+                        <legend class="legend-filter-extra">Сетка:</legend>
+                        <ul class="filter-extra">
+                            <li class="filter-option ">
+                                <input class=" filter-input visually-hidden " type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
+                                <label for="filter-adaptive">Адаптивная</label>
+                            </li>
+                            <li class="filter-option ">
+                                <input class=" filter-input visually-hidden " type="radio" name="product-group" value="fixation" id="filter-fixation">
+                                <label for="filter-fixation">Фиксированная</label>
+                            </li>
+                            <li class="filter-option ">
+                                <input class=" filter-input visually-hidden " type="radio" name="product-group" value="rubber" id="filter-rubber">
+                                <label for="filter-rubber">Резиновая</label>
+                            </li>
 
-</ul>
-</fieldset>
-<fieldset class="filter-item legend-feature">
-<legend class="legend-filter-extra ">Особенности:</legend>
-<ul class="filter-extra legend-feature-one">
-  <li class="filter-option ">
-    <input class=" filter-input-one visually-hidden " type="checkbox" name="slider" id="filter-slider" checked>
-    <label for="filter-slider">Слайдер</label>
-    </li>
-    <li class="filter-option ">
-      <input class=" filter-input-one visually-hidden " type="checkbox" name="block" id="filter-block" >
-      <label for="filter-block">Блок преимуществ</label>
-      </li>
-      <li class="filter-option ">
-        <input class=" filter-input-one visually-hidden " type="checkbox" name="news" id="filter-news" checked>
-        <label for="filter-news">Новости</label>
-        </li>
-        <li class="filter-option ">
-          <input class=" filter-input-one visually-hidden " type="checkbox" name="gallery" id="filter-gallery" >
-          <label for="filter-gallery">Галерея</label>
-          </li>
-          <li class="filter-option ">
-            <input class=" filter-input-one visually-hidden " type="checkbox" name="basket" id="filter-basket" >
-            <label for="filter-basket">Корзина</label>
-            </li>
-</ul>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="filter-item legend-feature">
+                        <legend class="legend-filter-extra ">Особенности:</legend>
+                        <ul class="filter-extra legend-feature-one">
+                            <li class="filter-option ">
+                                <input class=" filter-input-one visually-hidden " type="checkbox" name="slider" id="filter-slider" checked>
+                                <label for="filter-slider">Слайдер</label>
+                            </li>
+                            <li class="filter-option ">
+                                <input class=" filter-input-one visually-hidden " type="checkbox" name="block" id="filter-block">
+                                <label for="filter-block">Блок преимуществ</label>
+                            </li>
+                            <li class="filter-option ">
+                                <input class=" filter-input-one visually-hidden " type="checkbox" name="news" id="filter-news" checked>
+                                <label for="filter-news">Новости</label>
+                            </li>
+                            <li class="filter-option ">
+                                <input class=" filter-input-one visually-hidden " type="checkbox" name="gallery" id="filter-gallery">
+                                <label for="filter-gallery">Галерея</label>
+                            </li>
+                            <li class="filter-option ">
+                                <input class=" filter-input-one visually-hidden " type="checkbox" name="basket" id="filter-basket">
+                                <label for="filter-basket">Корзина</label>
+                            </li>
+                        </ul>
 
-        </fieldset>
-        <button type="submit" class="list-link-not">Показать</button>
-      </form>
-      </section>
-    <section class="list">
-      <h2 class="visually-hidden">Список шаблонов</h2>
+                    </fieldset>
+                    <button type="submit" class="list-link-not">Показать</button>
+                </form>
+            </section>
+            <section class="list">
+                <h2 class="visually-hidden">Список шаблонов</h2>
 
-<div class="list-chek-extra">
-      <div class="list-chek-extra-two">
-        <p>Сортировать:</p>
-      </div>
-       <div class="list-chek-extra-three">
-         <a class="list-chek-link-one active" href="#">по цене</a>
-         <a class="list-chek-link-one" href="#">по типу </a>
-         <a class="list-chek-link-one" href="#">по названию</a>
-       </div>
-       <div class="list-down">
-         
-        <a class="list-down-one active" href="#" ></a>
-        
-        
-        <a class="list-down-two" href="#"></a>
-        
-        </div>  
-</div>
+                <div class="list-chek-extra">
+                    <div class="list-chek-extra-two">
+                        <p>Сортировать:</p>
+                    </div>
+                    <div class="list-chek-extra-three">
+                        <a class="list-chek-link-one active" href="#">по цене</a>
+                        <a class="list-chek-link-one" href="#">по типу </a>
+                        <a class="list-chek-link-one" href="#">по названию</a>
+                    </div>
+                    <div class="list-down">
+
+                        <a class="list-down-one active" href="#"></a>
 
 
-      <ul class="list-chek">
-        
-        <li class="list-chek-one">
-          <div class="clock">
-          <div class="ultra-dec">
-          <span class="ultra-link"></span>
-          <span class="ultra-link"></span>
-          <span class="ultra-link"></span></div>
-          
-        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-sedona.jpg" width="360" height="578" alt="Шаблон сайта Седона" ></a>
-        <div class="list-chek-tow">
-        <a class="list-link-site" href="#">SEDONA</a>
-        <p>Информационный сайт<br> для туристов</p>
-        <a class="list-link" href="link.html">9 900 р</a>
+                        <a class="list-down-two" href="#"></a>
+
+                    </div>
+                </div>
+
+
+                <ul class="list-chek">
+
+                    <li class="list-chek-one">
+                        <div class="clock">
+                            <div class="ultra-dec">
+                                <span class="ultra-link"></span>
+                                <span class="ultra-link"></span>
+                                <span class="ultra-link"></span></div>
+
+                            <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-sedona.jpg" width="360" height="578" alt="Шаблон сайта Седона" ></a>
+                            <div class="list-chek-tow">
+                                <a class="list-link-site" href="#">SEDONA</a>
+                                <p>Информационный сайт<br> для туристов</p>
+                                <a class="list-link" href="link.html">9 900 р</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-chek-one">
+                        <div class="clock">
+                            <div class="ultra-dec">
+                                <span class="ultra-link"></span>
+                                <span class="ultra-link"></span>
+                                <span class="ultra-link"></span></div>
+                            <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-pink.jpg" width="360" height="578" alt="Шаблон сайта Пинк" ></a>
+                            <div class="list-chek-tow">
+                                <a class="list-link-site" href="#">Pink App</a>
+                                <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+                                <a class="list-link" href="link.html">9 900 р</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-chek-one">
+                        <div class="clock">
+                            <div class="ultra-dec">
+                                <span class="ultra-link"></span>
+                                <span class="ultra-link"></span>
+                                <span class="ultra-link"></span></div>
+                            <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-barbershop.jpg" width="360" height="578" alt="Шаблон сайта Бородинский" ></a>
+                            <div class="list-chek-tow">
+                                <a class="list-link-site" href="#">Barbershop</a>
+                                <p>Сайт салона красоты.<br>Для мужчин, да.</p>
+                                <a class="list-link" href="link.html">9 900 р</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-chek-one">
+                        <div class="clock">
+                            <div class="ultra-dec">
+                                <span class="ultra-link"></span>
+                                <span class="ultra-link"></span>
+                                <span class="ultra-link"></span></div>
+                            <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-mishka.jpg" width="360" height="578" alt="Шаблон сайта Мишки" ></a>
+                            <div class="list-chek-tow">
+                                <a class="list-link-site" href="#">MISHKA</a>
+                                <p>Интернет-магазин <br>вязаных игрушек</p>
+                                <a class="list-link" href="link.html">9 900 р</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-chek-one">
+                        <div class="clock">
+                            <div class="ultra-dec">
+                                <span class="ultra-link"></span>
+                                <span class="ultra-link"></span>
+                                <span class="ultra-link"></span></div>
+                            <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-aplus.jpg" width="360" height="578" alt="Шаблон сайта Аплус" ></a>
+                            <div class="list-chek-tow">
+                                <a class="list-link-site" href="#">A Plus</a>
+                                <p>Лендинг курсов повышения<br>квалификации</p>
+                                <a class="list-link" href="link.html">9 900 р</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-chek-one">
+                        <div class="clock">
+                            <div class="ultra-dec">
+                                <span class="ultra-link"></span>
+                                <span class="ultra-link"></span>
+                                <span class="ultra-link"></span></div>
+                            <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-kvast.jpg" width="360" height="578" alt="Шаблон сайта Кваст" ></a>
+                            <div class="list-chek-tow">
+                                <a class="list-link-site" href="#">КВАСТ</a>
+                                <p>Промо-сайт производителя<br>крафтового кваса</p>
+                                <a class="list-link" href="link.html">9 900 р</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="number-one-link">
+                    <li class="number-one "> <a class="active" href="#">1</a>
+                    </li>
+                    <li class="number-one"><a href="#">2</a>
+                    </li>
+                    <li class="number-one"><a href="#">3</a>
+                    </li>
+                    <li class="number-one number-one-two"><a href="#">Следующая</a>
+                    </li>
+                </ul>
+            </section>
         </div>
-      </div>
-        </li>
-        <li class="list-chek-one">
-          <div class="clock">
-          <div class="ultra-dec">
-          <span class="ultra-link"></span>
-          <span class="ultra-link"></span>
-          <span class="ultra-link"></span></div>
-        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-pink.jpg" width="360" height="578" alt="Шаблон сайта Пинк" ></a>
-        <div class="list-chek-tow">
-          <a class="list-link-site" href="#">Pink App</a>
-          <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
-          <a class="list-link" href="link.html">9 900 р</a>
-          </div>
-        </div>  
-      </li>
-        <li class="list-chek-one">
-          <div class="clock">
-          <div class="ultra-dec">
-          <span class="ultra-link"></span>
-          <span class="ultra-link"></span>
-          <span class="ultra-link"></span></div>
-        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-barbershop.jpg" width="360" height="578" alt="Шаблон сайта Бородинский" ></a>
-        <div class="list-chek-tow">
-          <a class="list-link-site" href="#">Barbershop</a>
-          <p>Сайт салона красоты.<br>Для мужчин, да.</p>
-          <a class="list-link" href="link.html">9 900 р</a>
-          </div>
-        </div>   
-      </li>
-        <li class="list-chek-one">
-          <div class="clock">
-          <div class="ultra-dec">
-          <span class="ultra-link"></span>
-          <span class="ultra-link"></span>
-          <span class="ultra-link"></span></div>
-        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-mishka.jpg" width="360" height="578" alt="Шаблон сайта Мишки" ></a>
-        <div class="list-chek-tow">
-          <a class="list-link-site" href="#">MISHKA</a>
-          <p>Интернет-магазин <br>вязаных игрушек</p>
-          <a class="list-link" href="link.html">9 900 р</a>
-          </div>
-        </div>     
-      </li>
-        <li class="list-chek-one">
-          <div class="clock">
-          <div class="ultra-dec">
-          <span class="ultra-link"></span>
-          <span class="ultra-link"></span>
-          <span class="ultra-link"></span></div>
-        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-aplus.jpg" width="360" height="578" alt="Шаблон сайта Аплус" ></a>
-        <div class="list-chek-tow">
-          <a class="list-link-site" href="#">A Plus</a>
-          <p>Лендинг курсов повышения<br>квалификации</p>
-          <a class="list-link" href="link.html">9 900 р</a>
-          </div>
-        </div>      
-      </li>
-        <li class="list-chek-one">
-          <div class="clock">
-          <div class="ultra-dec">
-          <span class="ultra-link"></span>
-          <span class="ultra-link"></span>
-          <span class="ultra-link"></span></div>
-        <a class="ultra-site" href="template.html"><img class="image-site" src="img/img-kvast.jpg" width="360" height="578" alt="Шаблон сайта Кваст" ></a>
-        <div class="list-chek-tow">
-          <a class="list-link-site" href="#">КВАСТ</a>
-          <p>Промо-сайт производителя<br>крафтового кваса</p>
-          <a class="list-link" href="link.html">9 900 р</a>
-          </div>
-        </div> 
-      </li>
-        </ul>
-       <ul class="number-one-link">
-<li class="number-one "> <a class="active"  href="#">1</a>
-</li>
-<li class="number-one"><a  href="#">2</a>
-</li>
-<li class="number-one"><a  href="#">3</a>
-</li>
-<li class="number-one number-one-two"><a  href="#">Следующая</a>
-</li>
-      </ul> 
-      </section>
-      </div>
-      
 
-</main>
-<footer class="main-footer">
-  <div class="footer-contacts">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1440" height="416"  alt="карта, как до нас добраться»">
+
+    </main>
+    <footer class="main-footer">
+        <div class="footer-contacts">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+                width="1440" height="416" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
   </iframe>
-    
-    <div class="contacts-image">
-      <img  src="img/map.jpg" width="1440" height="416"  alt="карта, как до нас добраться»">
-    </div>  
-  </div>
-  <div class="main-footer-link">
-    <div class="main-footer-extra">
-    <h2>NЁRDS DESIGN STUDIO</h2>
-    <p class="footer-item">191186, Санкт-Петербург,<br>
-       ул. Б. Конюшенная, д. 19/8</p>
-      <p class="footer-item-one"><a class="contacts-phone " href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-    <a class="contacts-link" href="link.html">Напишите нам</a>
-    </div>
-  <section class="network">
-    <h2 class="visually-hidden">Социальные сети</h2>
-    <div class="net-wrapper">
-    <div class="network-list">
-      <a class="network-link-two" href="#"></a>
-      <a class="network-link-one" href="#"></a>
-      <a class="network-link" href="#"></a>
-    </div>
-    <div class="net-one">
-    <p class="network-red" >Давайте дружить, это выгодно!</p>
-    <p class="network-blue">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </div>
-  </section>
-</div>
-</footer>
 
-<section class="modal modal-login">
-  <h2>Напишите нам</h2>
-  
-  
-  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="modal-info">
-    <div>
-      
-      <label class="modal-description" for="login-text">Ваше имя:</label>
-      <input class="login-icon-text" id="login-text" type="text" name="name" placeholder="Имя Фамилия">
-    </div>
-    
-    <div class="modal-info-login">
-      <label class="modal-description-one" for="login-login">Ваш email:</label>
-      <input class="login-icon-user" id="login-login" type="email" name="mail" placeholder="email@example.com">
-    </div>
-  </div>
-    
-    <div>
-      <label class="modal-description-two" for="login-text-one">Текст письма:</label>
-      <textarea  class="login-icon-text-one" id="login-text-one"  name="text"  placeholder="В свободной форме"></textarea>
-    </div>
-    
-    <button class="button-modal" type="submit">Отправить</button>
-  </form>
-  <button class="modal-close" type="button"aria-label="Закрыть"></button>
-</section>
+            <div class="contacts-image">
+                <img src="img/map.jpg" width="1440" height="416" alt="карта, как до нас добраться»">
+            </div>
+        </div>
+        <div class="main-footer-link">
+            <div class="main-footer-extra">
+                <h2>NЁRDS DESIGN STUDIO</h2>
+                <p class="footer-item">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+                <p class="footer-item-one"><a class="contacts-phone " href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+                <a class="contacts-link" href="link.html">Напишите нам</a>
+            </div>
+            <section class="network">
+                <h2 class="visually-hidden">Социальные сети</h2>
+                <div class="net-wrapper">
+                    <div class="network-list">
+                        <a class="network-link-two" href="#"></a>
+                        <a class="network-link-one" href="#"></a>
+                        <a class="network-link" href="#"></a>
+                    </div>
+                    <div class="net-one">
+                        <p class="network-red">Давайте дружить, это выгодно!</p>
+                        <p class="network-blue">Скидка 10% для друзей из социальных сетей.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
 
-<script src="js/login.js"></script>
-  </body>
+    <section class="modal modal-login">
+        <h2>Напишите нам</h2>
+
+
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="modal-info">
+                <div>
+
+                    <label class="modal-description" for="login-text">Ваше имя:</label>
+                    <input class="login-icon-text" id="login-text" type="text" name="name" placeholder="Имя Фамилия">
+                </div>
+
+                <div class="modal-info-login">
+                    <label class="modal-description-one" for="login-login">Ваш email:</label>
+                    <input class="login-icon-user" id="login-login" type="email" name="mail" placeholder="email@example.com">
+                </div>
+            </div>
+
+            <div>
+                <label class="modal-description-two" for="login-text-one">Текст письма:</label>
+                <textarea class="login-icon-text-one" id="login-text-one" name="text" placeholder="В свободной форме"></textarea>
+            </div>
+
+            <button class="button-modal" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+
+    <script src="js/login-minim.js"></script>
+</body>
+
 </html>
